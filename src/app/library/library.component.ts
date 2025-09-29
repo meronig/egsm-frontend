@@ -69,13 +69,13 @@ export class LibraryComponent implements AfterViewInit {
       }
       else if (update['result'] == 'not_found') {
         this.isProcessGroupDetailsFound = false
-        this.snackBar.open(`Process group does not found`, "Hide", { duration: 2000 });
+        this.snackBar.open(`Process group not found`, "Hide", { duration: 2000 });
       }
     }
   }
 
   /**
-   * Opens a NewProcessInstanceDialogComponent where the user can provide details of the new Process instnace
+   * Opens a NewProcessInstanceDialogComponent where the user can provide details of the new Process instance
    * @param process_type_name Name of the process type requested to create
    */
   openNewProcessInstanceDialog(process_type_name: string) {
